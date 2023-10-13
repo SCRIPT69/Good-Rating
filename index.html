@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/icons/Good Rating icon.png" type="image/x-icon">
+    <title>Good Rating - Kundelik</title>
+</head>
+<body ontouchstart="">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <div class="header__body">
+                    <div class="header__logo">
+                        <img src="img/Good Rating web logo.png" alt="Good Rating web logo">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="data-fields">
+                <div class="data-fields__container _container">
+                    <select name="" id="" class="data-fields__modeinput input-anim">
+                        <option selected>за четверть</option>
+                        <option>за полугодие</option>
+                    </select>
+                    <div class="data-fields__body">
+                        <div class="data-fields__formative formative-area">
+                            <div class="formative-area__header">
+                                <div class="formative-area__header-body">
+                                    <div class="formative-area__title title-block">Количество формативных оценок:</div>
+                                    <input type="number" value="1" min="1" max="12" class="formative-area__input input-block">
+                                </div>
+                            </div>
+                            <div class="formative-area__main">
+                                <input type="number" value="1" min="1" max="10" class="formative-area__formative">
+                            </div>
+                        </div>
+                        <div class="data-fields__sor sor-area">
+                            <div class="sor-area__header">
+                                <div class="sor-area__header-body">
+                                    <div class="sor-area__title title-block">Количество СОР-ов:</div>
+                                    <input type="number" value="1" min="1" max="4" class="sor-area__input input-block">
+                                </div>
+                            </div>
+                            <div class="sor-area__main">
+                                <div class="sor-area__sor">
+                                    <div class="sor-area__sor-text">СОР 1:</div>
+                                    <input type="number" min="1" class="sor-area__sor-points input-block">
+                                    <div class="sor-area__sor-text">из</div>
+                                    <input type="number" min="1" class="sor-area__sor-maxpoints input-block">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data-fields__soch soch-area">
+                            <div class="soch-area__soch-title title-block">Баллы за СОЧ:</div>
+                            <div class="soch-area__soch">
+                                <div class="soch-area__soch-body">
+                                    <input type="number" min="1" class="soch-area__soch-points input-block">
+                                    <div class="soch-area__soch-text">из</div>
+                                    <input type="number" min="1" class="soch-area__soch-maxpoints input-block">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="result">
+                <div class="result__container _container">
+                    <div class="result__body">
+                        <span class="result__text title-block">Текущий процент: <span>0%</span></span>
+                        <span class="result__text title-block">Оценка - <span>0</span></span>
+                    </div>
+                </div>
+            </section>
+            <section class="calculating">
+                <div class="calculating__container _container">
+                    <div class="calculating__body">
+                        <div class="calculating__input">
+                            <div class="calculating__input-body">
+                                <div class="calculating__text title-block">Необходимая оценка:</div>
+                                <select name="" id="" class="calculating__list  input-anim">
+                                    <option disabled selected value style="display: none;"></option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <button class="calculating__button">Расчитать</button>
+                        </div>
+                        <div class="calculating__output">
+                            <div class="calculating__output-text title-block">Необходимо выставить:</div>
+                            <div class="calculating__output-field"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="dist/bundle.js"></script>
+</body>
+</html>
